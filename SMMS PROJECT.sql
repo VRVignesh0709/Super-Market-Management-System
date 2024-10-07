@@ -81,11 +81,11 @@ insert into orders
 values(1011,902,"2024-09-25",129,"cancelled");
       alter table orders add column Status varchar(30);
       insert into orders(status) values("ordered"),
-									   ("Cancel"),
+					 ("Cancel"),
                                        ("Cancel"),
                                        ("ordered"),
                                        ("ordered"),
-										("Cancel"),
+					("Cancel"),
                                          ("ordered"),
                                          ("Cancel"),
                                          ("Cancel"),
@@ -111,7 +111,7 @@ foreign key (product_id) references products(product_id)
 
 alter table orderItems rename column quantity to Quantity_KG;
 insert into orderItems values(501,1001,103,10),
-							 (502,1004,201,15),
+			     (502,1004,201,15),
                              (503,1008,302,20),
                              (504,1009,109,31),
                              (505,1005,205,21),
@@ -134,7 +134,7 @@ foreign key (product_id) references products(product_id)
 
  insert into sales 
  values(21,1001,103,140),
-	   (22,1004,201,130),
+       (22,1004,201,130),
        (23,1008,302,185),
        (24,1009,109,125),
        (25,1005,205,113),
@@ -146,7 +146,7 @@ foreign key (product_id) references products(product_id)
        
  insert into sales 
  values(11,1001,103,140),
-	   (12,1004,201,130),
+       (12,1004,201,130),
        (13,1008,302,185),
        (14,1009,109,125),
        (15,1005,205,113),
